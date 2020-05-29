@@ -260,12 +260,14 @@
 
     <!-- Initialize Quill editor -->
     <script>
-    var quill = new Quill('#emailMessage', {
-        theme: 'snow'
-    });
+    $(document).ready(function(){
+        var quill = new Quill('#emailMessage', {
+            theme: 'snow'
+        });
 
-    var quill = new Quill('#signature', {
-        theme: 'snow'
+        var quill = new Quill('#signature', {
+            theme: 'snow'
+        });
     });
     </script>
 
