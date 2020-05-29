@@ -61,6 +61,43 @@ $(document).ready(function(){
     google.maps.event.addListener(autocompleteEventDetail, 'place_changed', function(){
         var near_place2 = autocompleteEventDetail.getPlace();
     });
+
 });
+
+$(document).ready(function(){
+    //Email Preview
+    $('#subject').keyup(function(){
+        $('#subjectPreview').html($('#subject').val());
+    });
+
+    $('#emailMessage').keyup(function (){
+        $('#messagePreview').html($('#emailMessage').val());
+    });
+
+    $('#signature').keyup(function (){
+        $('#signaturePreview').html($('#signature').val());
+        $('#signaturePreview').css('style', 'color : black');
+    });
+
+    $('#eventDetails').keyup(function(){
+        $('#eventDetailsPreview').html($('#eventDetails').val());
+    });
+
+    $('#description').keyup(function(){
+        $('#descriptionLinkPreview').html($('#description').val());
+    });
+
+    $("#calendar").keyup(function(){
+        $('#addToCalenderLink').html($('#calendar').val());
+    });
+
+    $(function(){
+        if(document.getElementById('eventDescriptionLink').checked){
+            $('#description').attr('disabled', 'disabled');
+        }
+    });
+});
+
+
 
     
