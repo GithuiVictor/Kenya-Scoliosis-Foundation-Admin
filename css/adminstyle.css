@@ -76,6 +76,24 @@ body{
 	color: #daf1ff;
 }
 
+/*forgot password modal*/
+#forgotPassword{
+    margin-top: 10rem;
+    color: whitesmoke;
+}
+
+#forgotPassword input{
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 0%;
+}
+
+#forgotPassword input:focus{
+    box-shadow: none;
+    border-bottom: 2px solid;
+    border-color: #01a74f;
+}
+
 /*Navbar*/
 .sidebar{
     height: 100vh;
@@ -380,7 +398,7 @@ body{
 }
 
 .eventEdit .images img {
-    width: 520px;
+    width: 461px;
     height: 250px;
     border-radius: 5px;
     object-fit: cover;
@@ -967,9 +985,9 @@ body{
 }
 
 .projectImage .images {
-    height: 400px;
+    height: 200px;
     bottom: 40px;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 .projectImage .images img {
@@ -998,5 +1016,57 @@ body{
 }
 
 .projectImage .button:hover{
+    background-color: green;
+}
+
+/*Project Description*/
+.projectImageDesc .container {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectImageDesc .box {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 2px 6px 15px 0 rgba(69, 65, 78, 0.1);
+}
+
+.projectImageDesc .images {
+    height: 200px;
+    bottom: 40px;
+    overflow-y: hidden;
+}
+
+.projectImageDesc .images img {
+    width: 398px;
+    height: 150px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin: 5px;
+}
+
+.projectImageDesc .button {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #01d262;
+    color: #fff;
+    border-radius: 5px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: 600;
+    font-family: "Helvetica Neue", sans-serif;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.projectImageDesc .button:hover{
     background-color: green;
 }
