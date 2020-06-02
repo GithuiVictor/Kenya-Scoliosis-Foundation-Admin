@@ -200,6 +200,8 @@
                                                         <label for="signature" class="text-muted">Signature</label>
                                                         <div class="container-fluid editor">
                                                             <div id="signature">
+                                                                <p>regards,</p>
+                                                                <br>
                                                                 <p>Kenya Scoliosis Foundation</p>
                                                                 <p>info@kenyascoliosisfoundation.org</p>
                                                                 <p>+254 701 234567</p>
@@ -225,15 +227,7 @@
                                                         Message
                                                     </p>
                                                     <br>
-                                                    <p id="signaturePreview">
-                                                        Kenya Scoliosis Foundation
-                                                        <br>
-                                                        info@kenyascoliosisfoundation.com
-                                                        <br>
-                                                        +254 712 345678
-                                                        <br>
-                                                        www.kenyascoliosisfoundation.org
-                                                    </p>
+                                                    <p id="signaturePreview"></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -258,17 +252,6 @@
     <script src="https://cdn.datedropper.com/get/{{LICENSE}}"></script>
     <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 
-    <!-- Initialize Quill editor -->
-    <script>
-    $(document).ready(function(){
-        var quill = new Quill('#emailMessage', {
-            theme: 'snow'
-        });
-
-        var quill = new Quill('#signature', {
-            theme: 'snow'
-        });
-    });
-    </script>
+    
 
 </html>
