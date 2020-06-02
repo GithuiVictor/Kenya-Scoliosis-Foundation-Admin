@@ -65,18 +65,26 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+    var quillMessage = new Quill('#emailMessage', {
+        theme: 'snow'
+    });
+
+    var quillSignature = new Quill('#signature', {
+        theme: 'snow'
+    });
+
     //Email Preview
     $('#subject').keyup(function(){
         $('#subjectPreview').html($('#subject').val());
     });
 
     $('#emailMessage').keyup(function (){
-        $('#messagePreview').html($('#emailMessage').val());
+        $('#messagePreview').html(quillMessage.root.innerHTML);
     });
 
+    $('#signaturePreview').html(quillSignature.root.innerHTML);
     $('#signature').keyup(function (){
-        $('#signaturePreview').html($('#signature').val());
-        $('#signaturePreview').css('style', 'color : black');
+        $('#signaturePreview').html(quillSignature.root.innerHTML);
     });
 
     $('#eventDetails').keyup(function(){
