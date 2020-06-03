@@ -99,9 +99,14 @@ $(document).ready(function(){
         $('#addToCalenderLink').html($('#calendar').val());
     });
 
-    $(function(){
-        if(document.getElementById('eventDescriptionLink').checked){
-            $('#description').attr('disabled', 'disabled');
+    $('#alertSwitch').click(function(){
+        if(this.checked){
+            $('input[type="radio"]').prop('disabled', true);
+            $('.category').attr('disabled', 'disabled');
+            
+        }else{
+            $('input[type="radio"]').prop('disabled', false);
+            $('.category').removeAttr('disabled');
         }
     });
 });
