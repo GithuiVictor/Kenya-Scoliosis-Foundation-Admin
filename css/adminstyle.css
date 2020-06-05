@@ -1,101 +1,101 @@
-body{
+body {
     font-family: 'Monteserrat', sans-serif;
     background-color: #eee;
 }
 
 /*section 22*/
-#admin{
+#admin {
     font-family: 'Roboto', sans-serif;
     background: url('../images/sunset.jpg') no-repeat center center fixed;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.section-22 .main-section{
+.section-22 .main-section {
     margin: 0 auto;
     margin-top: 130px;
     padding: 0;
 }
 
-.section-22 .main-section .logo{
+.section-22 .main-section .logo {
     margin-bottom: 80px;
     height: 150px;
     width: 150px;
 }
 
-.section-22 .modal-content{
-	background-color: #434e5a;
-	opacity: .9;
-	padding: 0 18px;
-	border-radius: 10px;
+.section-22 .modal-content {
+    background-color: #434e5a;
+    opacity: .9;
+    padding: 0 18px;
+    border-radius: 10px;
 }
 
-.section-22 .user-img img{
-	height: 120px;
-	width: 120px;
+.section-22 .user-img img {
+    height: 120px;
+    width: 120px;
 }
 
-.section-22 .user-img{
-	margin-top: -60px;
-	margin-bottom: 45px;
+.section-22 .user-img {
+    margin-top: -60px;
+    margin-bottom: 45px;
 }
 
-.section-22 .form-group{
-	margin-bottom: 25px;
+.section-22 .form-group {
+    margin-bottom: 25px;
 }
 
-.section-22 .form-group input{
-	height: 45px;
-	border-radius: 5px;
-	border: 0;
-	font-size: 18px;
-	letter-spacing: 2px;
-	padding-left: 30px;
+.section-22 .form-group input {
+    height: 45px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding-left: 30px;
 }
 
-.section-22 .form-input button{
-	width: 40%;
-	margin: 5px 0 25px;
+.section-22 .form-input button {
+    width: 40%;
+    margin: 5px 0 25px;
 }
 
-.section-22 .btn-success{
-	font-size: 19px;
-	border-radius: 5px;
-	padding: 7px 14px;
+.section-22 .btn-success {
+    font-size: 19px;
+    border-radius: 5px;
+    padding: 7px 14px;
 }
 
-.section-22 .btn-success:hover{
-	border: 1px solid;
+.section-22 .btn-success:hover {
+    border: 1px solid;
 }
 
-.section-22 .forgot{
-	padding: 5px 0 25px;
+.section-22 .forgot {
+    padding: 5px 0 25px;
 }
 
-.section-22 .forgot a{
-	color: #daf1ff;
+.section-22 .forgot a {
+    color: #daf1ff;
 }
 
 /*forgot password modal*/
-#forgotPassword{
+#forgotPassword {
     margin-top: 10rem;
     color: whitesmoke;
 }
 
-#forgotPassword input{
+#forgotPassword input {
     border: none;
     border-bottom: 1px solid;
     border-radius: 0%;
 }
 
-#forgotPassword input:focus{
+#forgotPassword input:focus {
     box-shadow: none;
     border-bottom: 2px solid;
     border-color: #01a74f;
 }
 
 /*Navbar*/
-.sidebar{
+.sidebar {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .9)), url(../../images/sunset.jpg);
     background-position: center;
@@ -104,49 +104,49 @@ body{
     box-shadow: 5px 7px 25px #999;
 }
 
-.navbar-brand img{
+.navbar-brand img {
     height: 3.5rem;
     width: 3.5rem;
 }
 
-.bottom-border{
+.bottom-border {
     border-bottom: 1px groove #eee;
 }
 
-.user{
+.user {
     color: white;
     text-decoration: none;
 }
 
-.user:hover{
+.user:hover {
     text-decoration: none;
     color: whitesmoke;
 }
 
-.sidebar-link{
+.sidebar-link {
     transition: all .4s;
 }
 
-.sidebar-link:hover{
+.sidebar-link:hover {
     background-color: #444;
     border-radius: 5px;
 }
 
-.current{
+.current {
     background-color: #01a74f;
     border-radius: 7px;
     box-shadow: 2px 5px 10px #111;
     transition: all .4s;
 }
 
-.current:hover{
+.current:hover {
     background-color: #01d262;
     border-radius: 7px;
     box-shadow: 2px 5px 20px #111;
     transform: translateY(-1px);
 }
 
-.search-input{
+.search-input {
     background: transparent;
     border: none;
     border-radius: 0;
@@ -154,29 +154,29 @@ body{
     transition: all .4s;
 }
 
-.search-input:focus{
+.search-input:focus {
     background: transparent;
     box-shadow: none;
     border-bottom: 2px solid #01d262;
     color: whitesmoke;
 }
 
-.search-button{
+.search-button {
     border-radius: 50%;
     padding: 10px 16px;
     transition: all .4s;
 }
 
-.search-button:hover{
+.search-button:hover {
     background-color: #444;
     transform: translateY(-2px);
 }
 
-.icon-parent{
+.icon-parent {
     position: relative;
 }
 
-.icon-bullet::after{
+.icon-bullet::after {
     content: "";
     position: absolute;
     top: 7px;
@@ -187,72 +187,73 @@ body{
     border-radius: 50%;
 }
 
-@media(max-width: 768px){
-    .sidebar{
+@media (max-width: 768px) {
+    .sidebar {
         position: static;
         height: auto;
     }
-    
-    .top-navbar{
+
+    .top-navbar {
         position: static;
     }
 }
 
 /*Cards*/
-.card-common{
+.card-common {
     box-shadow: 1px 2px 5px #999;
     transition: all .4s;
 }
 
-.card-common:hover{
+.card-common:hover {
     box-shadow: 2px 3px 16px #999;
     transform: translateY(-4px);
 }
 
-.card-common a{
+.card-common a {
     text-decoration: none;
-    color: rgb(0, 0, 0,  0.59);
+    color: rgb(0, 0, 0, 0.59);
 }
 
-.card-common a:hover{
+.card-common a:hover {
     color: green;
 }
 
 /*Users*/
-.section-4 .btn:focus{
+.section-4 .btn:focus {
     box-shadow: none;
 }
 
 /*Events*/
-.event{
+.event {
     transition: all .4s;
 }
 
-.event:hover{
+.event:hover {
     transform: translateX(-4px);
 }
-.event-border{
+
+.event-border {
     border-left: 5px solid #01d262;
 }
 
-.event .btn:focus{
+.event .btn:focus {
     box-shadow: none;
 }
 
 /*Events*/
-.events .heading-1{
+.events .heading-1 {
     font-weight: 700;
 }
 
-.events a{
+.events a {
     border-radius: 50%;
 }
 
-.events a:hover{
+.events a:hover {
     text-decoration: none;
 }
 
-.events .event-post{
+.events .event-post {
     box-shadow: 1px 2px 5px #999;
     margin-left: 10rem;
     margin-right: 10rem;
@@ -260,117 +261,118 @@ body{
     transition: all .4s;
 }
 
-.events .event-post:hover{
+.events .event-post:hover {
     box-shadow: 2px 3px 16px #999;
     transform: translateY(-5px);
 }
 
-.events .eventName{
+.events .eventName {
     text-decoration: none;
     font-weight: 600;
     font-size: 35px;
     color: black;
 }
 
-.events .eventName:hover{
+.events .eventName:hover {
     text-decoration: none;
     color: #01d262;
 }
 
-.events .tickets{
+.events .tickets {
     margin-top: 4rem;
 }
 
-.events .btn{
+.events .btn {
     padding-right: 1rem;
     padding-left: 1rem;
     margin-right: 0%;
 }
 
-.events .btn:focus{
+.events .btn:focus {
     box-shadow: none;
 }
 
-.events img{
+.events img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.modal .cancelbtn{
+.modal .cancelbtn {
     background-color: transparent;
     color: #01d262;
     border: 2px solid #01d262;
     transition: all .4s;
 }
 
-.modal .cancelbtn:hover{
+.modal .cancelbtn:hover {
     background-color: #01d262;
     color: whitesmoke;
 }
 
-.modal .exitbtn{
+.modal .exitbtn {
     background-color: #01d262;
     color: whitesmoke;
     transition: all .4s;
 }
 
-.modal .exitbtn:hover{
+.modal .exitbtn:hover {
     background-color: transparent;
     color: #01d262;
     border: 1px solid #01d262;
 }
 
 /*Edit Event*/
-.eventEdit .heading-section{
-    background-color: #d5dadf;   
+.eventEdit .heading-section {
+    background-color: #d5dadf;
 }
 
-.eventEdit .path a{
+.eventEdit .path a {
     text-decoration: none;
     color: black;
 }
-.eventEdit .heading-1 a{
+
+.eventEdit .heading-1 a {
     color: black;
     text-decoration: none;
     transition: all .4s;
 }
 
-.eventEdit .heading-1 a:hover{
+.eventEdit .heading-1 a:hover {
     color: #01d262;
     transform: translateY(-5px);
 }
 
-.eventEdit .menus a{
+.eventEdit .menus a {
     color: black;
 }
 
-.eventEdit .menus .nav{
+.eventEdit .menus .nav {
     margin-left: 16rem;
     border-bottom: none;
 }
 
-.eventEdit .menus .nav .active{
+.eventEdit .menus .nav .active {
     border-top: 4px solid green;
     border-bottom: transparent;
     background-color: transparent;
     color: black;
 }
 
-.eventEdit .card{
+.eventEdit .card {
     box-shadow: 1px 2px 10px #999;
 }
 
-.eventEdit .update{
+.eventEdit .update {
     margin-bottom: 20rem;
 }
 
-.eventEdit input:focus{
+.eventEdit input:focus {
     box-shadow: none;
     border-color: #01d262;
 }
 
-.eventEdit textarea:focus{
+.eventEdit textarea:focus {
     box-shadow: none;
     border-color: #01d262;
 }
@@ -422,30 +424,30 @@ body{
     transition: all .4s;
 }
 
-.eventEdit .button:hover{
+.eventEdit .button:hover {
     background-color: green;
 }
 
 /*Event Bookings*/
-.eventBookings .rsvpTable{
+.eventBookings .rsvpTable {
     margin-left: 5rem;
 }
 
-.eventBookings .card{
+.eventBookings .card {
     width: 35rem;
 }
 
 /*Add Event*/
-.aboutEvent{
+.aboutEvent {
     height: 25rem;
 }
 
-.eventEdit .editor{
+.eventEdit .editor {
     height: 15rem;
 }
 
 /*Edit Email*/
-.editEmail{
+.editEmail {
     margin-left: -5rem;
 }
 
@@ -498,54 +500,55 @@ body{
     transition: all .4s;
 }
 
-.userInfo .button:hover{
+.userInfo .button:hover {
     background-color: green;
 }
 
 
 /*Add User*/
-.addUser .heading-section{
-    background-color: #d5dadf;   
+.addUser .heading-section {
+    background-color: #d5dadf;
 }
 
-.addUser .path a{
+.addUser .path a {
     text-decoration: none;
     color: black;
 }
-.addUser .heading-1 a{
+
+.addUser .heading-1 a {
     color: black;
     text-decoration: none;
     transition: all .4s;
 }
 
-.addUser .heading-1 a:hover{
+.addUser .heading-1 a:hover {
     color: #01d262;
     transform: translateY(-5px);
 }
 
-.addUser input:focus{
+.addUser input:focus {
     border-color: #01a74f;
     box-shadow: none;
 }
 
-.addUser .images img{
+.addUser .images img {
     margin-left: 9.5rem;
 }
 
 /*Blogs*/
-.blogs .heading-1{
+.blogs .heading-1 {
     font-weight: 700;
 }
 
-.blogs a{
+.blogs a {
     border-radius: 50%;
 }
 
-.blogs a:hover{
+.blogs a:hover {
     text-decoration: none;
 }
 
-.blogs .blog-post{
+.blogs .blog-post {
     box-shadow: 1px 2px 5px #999;
     margin-left: 10rem;
     margin-right: 10rem;
@@ -553,129 +556,130 @@ body{
     transition: all .4s;
 }
 
-.blogs .blog-post:hover{
+.blogs .blog-post:hover {
     box-shadow: 2px 3px 16px #999;
     transform: translateY(-5px);
 }
 
-.blogs .blogName{
+.blogs .blogName {
     text-decoration: none;
     font-weight: 600;
     font-size: 35px;
     color: black;
 }
 
-.blogs .blogName:hover{
+.blogs .blogName:hover {
     text-decoration: none;
     color: #01d262;
 }
 
-.blogs .tickets{
+.blogs .tickets {
     margin-top: 4rem;
 }
 
-.blogs .btn{
+.blogs .btn {
     padding-right: 1rem;
     padding-left: 1rem;
     margin-right: 0%;
 }
 
-.blogs .btn:focus{
+.blogs .btn:focus {
     box-shadow: none;
 }
 
-.blogs img{
+.blogs img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.modal .cancelbtn{
+.modal .cancelbtn {
     background-color: transparent;
     color: #01d262;
     border: 2px solid #01d262;
     transition: all .4s;
 }
 
-.modal .cancelbtn:hover{
+.modal .cancelbtn:hover {
     background-color: #01d262;
     color: whitesmoke;
 }
 
-.modal .exitbtn{
+.modal .exitbtn {
     background-color: #01d262;
     color: whitesmoke;
     transition: all .4s;
 }
 
-.modal .exitbtn:hover{
+.modal .exitbtn:hover {
     background-color: transparent;
     color: #01d262;
     border: 1px solid #01d262;
 }
 
-.writeArticle{
+.writeArticle {
     height: 60rem;
 }
 
-.editor{
+.editor {
     height: 50rem;
 }
 
-#editor{
+#editor {
     margin-bottom: 10rem;
 }
 
 /*Edit Event*/
-.ourfinances .heading-section{
-    background-color: #d5dadf;   
+.ourfinances .heading-section {
+    background-color: #d5dadf;
 }
 
-.ourfinances .path a{
+.ourfinances .path a {
     text-decoration: none;
     color: black;
 }
-.ourfinances .heading-1 a{
+
+.ourfinances .heading-1 a {
     color: black;
     text-decoration: none;
     transition: all .4s;
 }
 
-.ourfinances .heading-1 a:hover{
+.ourfinances .heading-1 a:hover {
     color: #01d262;
     transform: translateY(-5px);
 }
 
-.ourfinances .menus a{
+.ourfinances .menus a {
     color: black;
 }
 
-.ourfinances .menus .nav{
+.ourfinances .menus .nav {
     margin-left: 15rem;
     border-bottom: none;
 }
 
-.ourfinances .menus .nav .active{
+.ourfinances .menus .nav .active {
     border-top: 4px solid green;
     border-bottom: transparent;
     background-color: transparent;
     color: black;
 }
 
-.ourfinances .card{
+.ourfinances .card {
     box-shadow: 1px 2px 10px #999;
 }
 
-.ourfinances .update{
+.ourfinances .update {
     margin-bottom: 20rem;
 }
 
-.ourfinances input:focus{
+.ourfinances input:focus {
     box-shadow: none;
     border-color: #01d262;
 }
 
-.ourfinances textarea:focus{
+.ourfinances textarea:focus {
     box-shadow: none;
     border-color: #01d262;
 }
@@ -727,93 +731,95 @@ body{
     transition: all .4s;
 }
 
-.ourfinances .button:hover{
+.ourfinances .button:hover {
     background-color: green;
 }
 
-.ourfinances .Message{
+.ourfinances .Message {
     height: 15rem;
 }
 
-.ourfinances .editor{
+.ourfinances .editor {
     height: 10rem;
 }
 
-.ourfinances .project-select:focus{
+.ourfinances .project-select:focus {
     box-shadow: none;
     border-color: green;
 }
 
-.ourfinances option:hover{
+.ourfinances option:hover {
     background-color: #01d262 !important;
 }
 
-.ourfinances .projects a{
+.ourfinances .projects a {
     color: whitesmoke;
 }
 
-.ourfinances .projects a:hover{
+.ourfinances .projects a:hover {
     text-decoration: none;
     color: #01d262;
 }
 
-.ourfinances .approveBtn{
+.ourfinances .approveBtn {
     transition: all .4s;
 }
-.ourfinances .approveBtn:hover{
+
+.ourfinances .approveBtn:hover {
     background-color: #01a74f;
     border-color: #01a74f;
 }
 
 /*task list*/
-.task-border{
+.task-border {
     border-left: 3px solid #01a74f;
 }
 
-.btn-sm:focus{
+.btn-sm:focus {
     box-shadow: none;
 }
 
 /*Progress Bars*/
-.progress .progress-bar{
+.progress .progress-bar {
     width: 0;
     transition: all ease 0.8s;
 }
 
 /*Add Article*/
-.addArticle .heading-section{
-    background-color: #d5dadf;   
+.addArticle .heading-section {
+    background-color: #d5dadf;
 }
 
-.addArticle .path a{
+.addArticle .path a {
     text-decoration: none;
     color: black;
 }
-.addArticle .heading-1 a{
+
+.addArticle .heading-1 a {
     color: black;
     text-decoration: none;
     transition: all .4s;
 }
 
-.addArticle .heading-1 a:hover{
+.addArticle .heading-1 a:hover {
     color: #01d262;
     transform: translateY(-5px);
 }
 
-.addArticle .card{
+.addArticle .card {
     box-shadow: 1px 2px 10px #999;
 }
 
-.addArticle .upload{
+.addArticle .upload {
     margin-bottom: 20rem;
 }
 
-.addArticle input:focus{
+.addArticle input:focus {
     box-shadow: none;
     border-color: #01d262;
 }
 
-.addArticle textarea:focus{
+.addArticle textarea:focus {
     box-shadow: none;
     border-color: #01d262;
 }
@@ -865,44 +871,45 @@ body{
     transition: all .4s;
 }
 
-.addArticle .button:hover{
+.addArticle .button:hover {
     background-color: green;
 }
 
 /*Article Details*/
-.articleDetails .heading-section{
-    background-color: #d5dadf;   
+.articleDetails .heading-section {
+    background-color: #d5dadf;
 }
 
-.articleDetails .path a{
+.articleDetails .path a {
     text-decoration: none;
     color: black;
 }
-.articleDetails .heading-1 a{
+
+.articleDetails .heading-1 a {
     color: black;
     text-decoration: none;
     transition: all .4s;
 }
 
-.articleDetails .heading-1 a:hover{
+.articleDetails .heading-1 a:hover {
     color: #01d262;
     transform: translateY(-5px);
 }
 
-.articleDetails .card{
+.articleDetails .card {
     box-shadow: 1px 2px 10px #999;
 }
 
-.articleDetails .update{
+.articleDetails .update {
     margin-bottom: 20rem;
 }
 
-.articleDetails input:focus{
+.articleDetails input:focus {
     box-shadow: none;
     border-color: #01d262;
 }
 
-.articleDetails textarea:focus{
+.articleDetails textarea:focus {
     box-shadow: none;
     border-color: #01d262;
 }
@@ -954,16 +961,16 @@ body{
     transition: all .4s;
 }
 
-.articleDetails .button:hover{
+.articleDetails .button:hover {
     background-color: green;
 }
 
 /*Reminder Email*/
-.rsvpConfirmationEmail .Message{
+.rsvpConfirmationEmail .Message {
     height: 20rem;
 }
 
-.userInfo .images img{
+.userInfo .images img {
     margin-left: 9.5rem;
 }
 
@@ -1015,7 +1022,7 @@ body{
     transition: all .4s;
 }
 
-.projectImage .button:hover{
+.projectImage .button:hover {
     background-color: green;
 }
 
@@ -1067,6 +1074,6 @@ body{
     transition: all .4s;
 }
 
-.projectImageDesc .button:hover{
+.projectImageDesc .button:hover {
     background-color: green;
 }

@@ -1,12 +1,16 @@
-$(document).ready(function(){
+let uploadedFile = null;
+$(document).ready(function () {
     const button = document.querySelector('.button');
     const imagesContainer = document.querySelector('.images');
 
-    button.addEventListener('click', async () => {
-        const files  =  await selectFile('image/*', false);
-        onFileSelected(files);
-        $(imagesContainer).html("");
-    });
+    if (button) {
+        button.addEventListener('click', async () => {
+            uploadedFile = await selectFile('image/*', false);
+            console.log(uploadedFile)
+            onFileSelected(uploadedFile);
+            $(imagesContainer).html("");
+        });
+    }
 
     const addImage = (src) => {
         const img = document.createElement('img');
@@ -43,68 +47,68 @@ $(document).ready(function(){
     }
 
     //Location Autocomplete
-    var autocompleteAddEvent;
-    var autocompleteEventDetail;
-    autocompleteAddEvent = new google.maps.places.Autocomplete((document.getElementById('eventVenue')), {
-        types: ['geocode'],
-    });
-
-    google.maps.event.addListener(autocompleteAddEvent, 'place_changed', function(){
-        var near_place1 = autocompleteAddEvent.getPlace();
-    });
-
-
-    autocompleteEventDetail = new google.maps.places.Autocomplete((document.getElementById('eventVenueDetail')), {
-        types: ['geocode'],
-    });
-
-    google.maps.event.addListener(autocompleteEventDetail, 'place_changed', function(){
-        var near_place2 = autocompleteEventDetail.getPlace();
-    });
+    // var autocompleteAddEvent;
+    // var autocompleteEventDetail;
+    // autocompleteAddEvent = new google.maps.places.Autocomplete((document.getElementById('eventVenue')), {
+    //     types: ['geocode'],
+    // });
+    //
+    // google.maps.event.addListener(autocompleteAddEvent, 'place_changed', function () {
+    //     var near_place1 = autocompleteAddEvent.getPlace();
+    // });
+    //
+    //
+    // autocompleteEventDetail = new google.maps.places.Autocomplete((document.getElementById('eventVenueDetail')), {
+    //     types: ['geocode'],
+    // });
+    //
+    // google.maps.event.addListener(autocompleteEventDetail, 'place_changed', function () {
+    //     var near_place2 = autocompleteEventDetail.getPlace();
+    // });
 
 });
 
-$(document).ready(function(){
-    var quillMessage = new Quill('#emailMessage', {
-        theme: 'snow'
-    });
-
-    var quillSignature = new Quill('#signature', {
-        theme: 'snow'
-    });
+$(document).ready(function () {
+    // var quillMessage = new Quill('#emailMessage', {
+    //     theme: 'snow'
+    // });
+    //
+    // var quillSignature = new Quill('#signature', {
+    //     theme: 'snow'
+    // });
 
     //Email Preview
-    $('#subject').keyup(function(){
+    $('#subject').keyup(function () {
         $('#subjectPreview').html($('#subject').val());
     });
 
-    $('#emailMessage').keyup(function (){
-        $('#messagePreview').html(quillMessage.root.innerHTML);
-    });
+    // $('#emailMessage').keyup(function () {
+    //     $('#messagePreview').html(quillMessage.root.innerHTML);
+    // });
 
-    $('#signaturePreview').html(quillSignature.root.innerHTML);
-    $('#signature').keyup(function (){
-        $('#signaturePreview').html(quillSignature.root.innerHTML);
-    });
+    // $('#signaturePreview').html(quillSignature.root.innerHTML);
+    // $('#signature').keyup(function () {
+    //     $('#signaturePreview').html(quillSignature.root.innerHTML);
+    // });
 
-    $('#eventDetails').keyup(function(){
+    $('#eventDetails').keyup(function () {
         $('#eventDetailsPreview').html($('#eventDetails').val());
     });
 
-    $('#description').keyup(function(){
+    $('#description').keyup(function () {
         $('#descriptionLinkPreview').html($('#description').val());
     });
 
-    $("#calendar").keyup(function(){
+    $("#calendar").keyup(function () {
         $('#addToCalenderLink').html($('#calendar').val());
     });
 
-    $('#alertSwitch').click(function(){
-        if(this.checked){
+    $('#alertSwitch').click(function () {
+        if (this.checked) {
             $('input[type="radio"]').prop('disabled', true);
             $('.category').attr('disabled', 'disabled');
-            
-        }else{
+
+        } else {
             $('input[type="radio"]').prop('disabled', false);
             $('.category').removeAttr('disabled');
         }
@@ -113,4 +117,3 @@ $(document).ready(function(){
 
 
 
-    
