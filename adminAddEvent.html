@@ -202,11 +202,19 @@
                                                placeholder="Event Name" required>
                                         <br>
 
+                                        <label for="eventFee" class="text-muted">Event Fee (Kshs)</label>
+                                        <br>
+                                        <input type="number" id="eventFee" name="Fee"
+                                               class="form-control eventFee"
+                                               placeholder="Event Fee" required>
+                                        <br>
+
                                         <label for="eventDescription" class="text-muted">Short
                                             Description (Appears on the cards)</label>
                                         <textarea id="eventDescription" rows="4"
                                                   class="form-control" name="shortDescription"
                                                   placeholder="Short Description of the Event"
+                                                  maxlength="200"
                                                   required></textarea>
                                     </div>
                                 </div>
