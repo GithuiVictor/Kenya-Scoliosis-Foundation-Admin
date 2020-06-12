@@ -16,7 +16,7 @@ const formDataToJson = (formData) => {
 
 const defaultErrorHandler = (error) => {
     $('.loading-overlay').hide();
-    if (String(error.response.status).startsWith(4)) {
+    if (String(error && error.response && error.response.status).startsWith(4)) {
         toastr.error(error.response && error.response.data && error.response.data.message || 'An error occurred. Please try again');
     } else {
         toastr.error('An error occurred. Please try again.');

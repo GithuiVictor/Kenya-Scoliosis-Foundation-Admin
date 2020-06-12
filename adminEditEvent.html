@@ -194,7 +194,8 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-muted" href="adminEventBookings.html">
+                                <a class="nav-link text-muted event-rsvps-a"
+                                   href="adminEventBookings.html">
                                     <h4>Event Bookings</h4>
                                 </a>
                             </li>
@@ -219,10 +220,19 @@
                                                placeholder="Event Name" required>
                                         <br>
 
+                                        <label for="eventFee" class="text-muted">Event Fee
+                                            (Kshs)</label>
+                                        <br>
+                                        <input type="number" id="eventFee" name="amount"
+                                               class="form-control eventFee event-amount"
+                                               placeholder="Event Fee" required>
+                                        <br>
+
                                         <label for="eventDescription" class="text-muted">Short
                                             Description</label>
                                         <textarea id="eventDescription" rows="4"
-                                                  class="form-control event-shortDescription" name="shortDescription"
+                                                  class="form-control event-shortDescription"
+                                                  name="shortDescription"
                                                   placeholder="Short Description of the Event"
                                                   required></textarea>
                                     </div>
@@ -250,14 +260,16 @@
                                         <label for="eventName" class="text-muted">Date</label>
                                         <br>
                                         <input type="text" id="date-input" name="eventDate"
-                                               class="form-control eventName event-date" data-large-mode="true"
+                                               class="form-control eventName event-date"
+                                               data-large-mode="true"
                                                data-large-default="true" data-lock="from"
                                                data-theme="leaf" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 px-5">
                                     <label for="eventDescription" class="text-muted">Time</label>
-                                    <input type="time" name="eventTime" class="form-control eventName event-time"
+                                    <input type="time" name="eventTime"
+                                           class="form-control eventName event-time"
                                            placeholder="Event Name" required>
                                 </div>
                             </div>
@@ -273,11 +285,14 @@
                                         <label for="eventVenue"
                                                class="text-muted">Location</label>
                                         <br>
-                                        <input name="location" type="text" id="eventVenue" class="form-control event-location"
+                                        <input name="location" type="text" id="eventVenue"
+                                               class="form-control event-location"
                                                placeholder="Location of event" required>
-                                        <input name="locationDetails" type="hidden" class="event-locationDetails">
+                                        <input name="locationDetails" type="hidden"
+                                               class="event-locationDetails">
                                         <input name="latitude" type="hidden" class="event-latitude">
-                                        <input name="longitude" type="hidden" class="event-longitude">
+                                        <input name="longitude" type="hidden"
+                                               class="event-longitude">
                                     </div>
                                 </div>
                                 <div class="col-md-5"></div>

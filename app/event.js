@@ -1,3 +1,6 @@
+const urlParams = new URLSearchParams(window.location.search);
+const eventId = urlParams.get('event');
+
 class Event {
     static addEvent(form) {
         $('.loading-overlay').show();
@@ -61,6 +64,7 @@ class Event {
                 $('.event-shortDescription').val(event.shortDescription);
                 $('.event-date').val(event.eventDate);
                 $('.event-time').val(event.eventTime);
+                $('.event-amount').val(event.amount);
                 $('.event-location').val(event.location);
                 $('.event-locationDetails').val(event.locationDetails);
                 $('.event-latitude').val(event.latitude);
@@ -74,10 +78,23 @@ class Event {
                 defaultErrorHandler(error);
             });
     }
-}
 
-const urlParams = new URLSearchParams(window.location.search);
-const eventId = urlParams.get('event');
+    static getEventRsvps() {
+        $('.loading-overlay').show();
+        axios.get(`/events/${eventId}/rsvps`)
+            .then(function (response) {
+                $('.loading-overlay').hide();
+                const eventsContainer = $('#events-rsvps-container');
+                eventsContainer.empty();
+                response.data.forEach(rsvp => {
+                    eventsContainer.append(eventRsvpTemp(rsvp));
+                });
+            })
+            .catch(function (error) {
+                defaultErrorHandler(error);
+            });
+    }
+}
 
 
 try {
@@ -110,6 +127,13 @@ $(document).ready(() => {
 
     if (eventId) {
         Event.getEventDetails(eventId);
+
+        $('.event-details-a').attr('href', `adminEditEvent.html?event=${eventId}`);
+        $('.event-rsvps-a').attr('href', `adminEventBookings.html?event=${eventId}`);
+    }
+
+    if (page === 'event-rsvps') {
+        Event.getEventRsvps();
     }
 });
 
@@ -154,5 +178,23 @@ const eventCard = (event) => {
             </div>
         </div>
     </div>
+    `;
+};
+
+const eventRsvpTemp = (rsvp) => {
+    return `
+        <tr>
+            <td>${rsvp.name}</td>
+            <td>${rsvp.email}</td>
+            <td>${rsvp.phone}</td>
+            <td>
+                <a href="adminMessage.html">
+                    <button type="button"
+                            class="btn btn-success btn-sm"
+                            onclick="">Message
+                    </button>
+                </a>
+            </td>
+        </tr>
     `;
 };
