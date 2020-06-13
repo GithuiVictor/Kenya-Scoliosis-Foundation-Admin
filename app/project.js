@@ -34,6 +34,18 @@ class Project {
             });
     }
 
+    static activateProject(projectId) {
+        $('.loading-overlay').show();
+        axios.patch(`/projects/${projectId}/activate`, {})
+            .then(function (response) {
+                $('.loading-overlay').hide();
+                toastr.success('Project has been activated successfully')
+            })
+            .catch(function (error) {
+                defaultErrorHandler(error);
+            });
+    }
+
     static getProjects() {
         $('.loading-overlay').show();
         axios.get(`/projects`)
@@ -48,7 +60,11 @@ class Project {
                     projectsContainer.append(projectCard(project));
 
                     //add options for expenses
-                    projectsSelect.append(`<option value="${project.id}">${project.name}</option>`);
+                    if (project.status === 'active') {
+                        projectsSelect.append(`<option selected value="${project.id}">${project.name}</option>`);
+                    } else {
+                        projectsSelect.append(`<option value="${project.id}">${project.name}</option>`);
+                    }
                 });
             })
             .catch(function (error) {
@@ -165,6 +181,12 @@ const expenseForm = $('#expense-form');
 expenseForm.on('submit', (e) => {
     e.preventDefault();
     Project.addProjectExpense(expenseForm);
+});
+
+// on activate project
+const activateProjectSelect = $('select[name="active-project"]');
+activateProjectSelect.on('change', () => {
+    Project.activateProject(activateProjectSelect.val());
 });
 
 $(document).ready(() => {
